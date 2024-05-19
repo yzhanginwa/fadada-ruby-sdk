@@ -41,7 +41,10 @@ module FadadaRubySdk
         headers['X-FASC-AccessToken'] = access_token
       end
 
-      params['bizContent'] = (data.is_a? String)? data : data.to_json
+      unless data.nil? || data.empty?
+        params['bizContent'] = (data.is_a? String)? data : data.to_json
+      end
+
       return headers, params
     end
 
