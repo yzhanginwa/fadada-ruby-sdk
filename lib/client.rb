@@ -27,5 +27,11 @@ module FadadaRubySdk
 
       JSON.parse(response.body)
     end
+
+    # in some cases the frontend needs signture to directly request FaDaDa API
+    def get_signature(access_token, params)
+      # to return headers and params
+      @signer.sign(access_token, params)
+    end
   end
 end
