@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'fadada-ruby-sdk'
   s.licenses    = ['MIT']
-  s.version     = '0.2.1'
+  s.version     = '0.3.0'
   s.date        = '2024-05-17'
   s.summary     = "A ruby SDK for developers to use FaDaDa agreement and signature services"
   s.description = "fadada-ruby-sdk is a light and easy to use gem. It could help developers quickly make use of FaDaDa's agreement and signature services."
